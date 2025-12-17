@@ -93,10 +93,21 @@ Ferramentas úteis para o dia a dia do servidor.
    npm start
    ```
 
-## 🌐 Links
+## 🌐 Links Úteis
 
-- [Adicionar ao Discord](https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID&permissions=8&scope=bot%20applications.commands)
+- [**Site Oficial e Painel**](https://rzsistema-bot-vz18.vercel.app/)
+- [Adicionar ao Discord](https://discord.com/oauth2/authorize?client_id=1141151534399377450&permissions=8&scope=bot%20applications.commands)
+
+## ✨ Funcionalidades Especiais
+
+### 👋 Sistema de Boas-Vindas (Onboarding)
+
+O bot detecta automaticamente quando um novo membro entra no servidor e envia uma mensagem de **Boas-vindas** elegante com a foto de perfil do usuário, orientando sobre os comandos e o site.
+
+### 📝 Transcrição de Tickets
+
+Ao fechar um ticket, uma cópia completa da conversa é salva em um arquivo `.txt` e enviada para o usuário e para o canal de logs, garantindo segurança e transparência.
 
 ---
 
-Desenvolvido por **RZSISTEMA**.
+Desenvolvido com ❤️ por **RZSISTEMA**.
