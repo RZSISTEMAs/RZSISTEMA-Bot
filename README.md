@@ -2,7 +2,9 @@
 
 O **RZSISTEMA App** é um bot completo para Discord, focado em administração, entretenimento, música e utilitários. Desenvolvido para oferecer uma experiência "premium" e interativa para sua comunidade.
 
-![Preview do Bot](bot_preview_mockup.png)
+<div align="center">
+  <img src="website/logo.png" alt="RZSISTEMA Bot Logo" width="200"/>
+</div>
 
 ## 📑 Funcionalidades & Comandos
 
