@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RZSISTEMA App - O Bot Definitivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/embed/avatars/0.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">RZSISTEMA <span>App</span></div>
+        <nav>
+            <a href="#features">Funcionalidades</a>
+            <a href="#commands">Comandos</a>
+            <a href="#support">Suporte</a>
+        </nav>
+        <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_AQUI&permissions=8&scope=bot%20applications.commands" class="btn-add">Adicionar ao Discord</a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>O Bot que faz tudo.<br><span>E mais um pouco.</span></h1>
+            <p>Gerencie, divirta e engaje sua comunidade com o bot mais completo do mercado. Música, moderação, tickets e jogos em um só lugar.</p>
+            <div class="hero-buttons">
+                <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_AQUI&permissions=8&scope=bot%20applications.commands" class="btn-primary">Me Convide Agora</a>
+                <a href="#features" class="btn-secondary">Saber Mais</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- Placeholder para a imagem mockada -->
+            <img src="../bot_preview_mockup.png" alt="Preview do Bot no Discord">
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Por que escolher o RZSISTEMA App?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🎧 Música & Rádio</h3>
+                <p>Toque rádios online 24h ou suas músicas favoritas com alta qualidade e estabilidade.</p>
+            </div>
+            <div class="card">
+                <h3>🎫 Sistema de Ticket</h3>
+                <p>Atendimento profissional. Crie canais privados automaticamente para suporte.</p>
+            </div>
+            <div class="card">
+                <h3>🎮 Minigames</h3>
+                <p>Jogo da Velha, Jokenpo, Adivinhação e mais para animar o chat.</p>
+            </div>
+            <div class="card">
+                <h3>🛠️ Utilidades</h3>
+                <p>Salas de voz temporárias, reuniões organizadas e ferramentas de moderação.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="commands" class="commands">
+        <h2>Lista de Comandos</h2>
+        <div class="command-category">
+            <h3>Administração & Utilidade</h3>
+            <code>/ticketsetup</code> <code>/privada</code> <code>/reuniao</code> <code>/serverinfo</code>
+        </div>
+        <div class="command-category">
+            <h3>Diversão & Social</h3>
+            <code>/ship</code> <code>/b-hug</code> <code>/velha</code> <code>/jokenpo</code> <code>/say</code>
+        </div>
+        <div class="command-category">
+            <h3>Música</h3>
+            <code>/radio</code> <code>/stop</code> <code>/play</code>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 RZSISTEMA. Todos os direitos reservados.</p>
+        <p>Desenvolvido com ❤️ para Discord.</p>
+    </footer>
+
+    <script>
+        // Simples animação de scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
