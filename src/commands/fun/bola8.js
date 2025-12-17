@@ -2,7 +2,7 @@ const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('8ball')
+        .setName('bola8')
         .setDescription('Responde sua pergunta com sabedoria (aleatória).')
         .addStringOption(option => 
             option.setName('pergunta')

@@ -6,64 +6,71 @@ O **RZSISTEMA App** é um bot completo para Discord, focado em administração, 
 
 ## 📑 Funcionalidades & Comandos
 
-### 📂 Admin (Administração)
+### 📂 Admin (Administração e Configuração)
 
-Comandos para gerenciar o servidor e o bot.
+Comandos essenciais para a configuração do bot.
 
-- **/ticketsetup**: Envia o painel de tickets para o canal atual (cria botão de atendimento).
+- **/ticketsetup**: Cria um painel de atendimento para os membros abrirem tickets.
+- **/ticket**: Comandos internos de gerenciamento de tickets.
 
-### 🎲 Fun (Diversão)
+### 🎲 Fun (Jogos e Diversão)
 
-Joguinhos para interagir com os membros.
+Jogos interativos para engajar a comunidade.
 
-- **/8ball**: A bola mágica responde sua pergunta com sabedoria.
 - **/adivinhar**: Tente adivinhar o número secreto (1 a 100).
+- **/bola8**: A bola mágica responde sua pergunta com sabedoria.
+- **/dado**: Rola um dado virtual (d6, d20, etc).
+- **/forca**: Jogo clássico da Forca (responda no chat).
+- **/jokenpo**: Jogue Pedra, Papel ou Tesoura contra o bot com botões interativos.
+- **/memoria**: Jogo da Memória para encontrar pares de emojis.
 - **/moeda**: Joga uma moeda (Cara ou Coroa).
-- **/dado**: Rola um dado (você escolhe os lados).
-- **/jokenpo**: Jogue Pedra, Papel ou Tesoura contra o bot (com botões!).
-- **/velha**: Inicia um Jogo da Velha contra outro membro.
+- **/velha**: Desafie um amigo para uma partida de Jogo da Velha.
 
-### 🛡️ Moderation (Moderação)
+### 🛡️ Moderation (Moderação e Segurança)
 
-Ferramentas para manter a ordem.
+Ferramentas par manter a ordem no servidor.
 
-- **/ban**: Bane um usuário do servidor.
-- **/kick**: Expulsa um usuário.
-- **/timeout**: Aplica castigo (tempo de silêncio) em um usuário.
-- **/unban**: Remove o banimento de um usuário.
-- **/lock**: Tranca o canal (impede mensagens).
-- **/unlock**: Destranca o canal.
+- **/ban**: Bane um usuário permanentemente.
 - **/clear**: Limpa várias mensagens do chat de uma vez.
+- **/kick**: Expulsa um usuário do servidor.
+- **/lock**: Tranca o canal atual (impede novas mensagens).
+- **/timeout**: Aplica um castigo temporário (silêncio) em um usuário.
+- **/unban**: Remove o banimento de um usuário.
+- **/unlock**: Destranca o canal atual.
+- **Logs**: O bot registra mensagens apagadas automaticamente no canal configurado.
+- **Boas-vindas**: O bot envia um cartão de boas-vindas com a foto do novo membro.
 
-### 📂 Music (Música & Rádio)
+### 🎵 Music (Música e Rádio)
 
-Sistema de som de alta qualidade.
+Sistema de áudio robusto e de alta qualidade.
 
-- **/radio [url]**: Toca uma rádio online ou link de stream.
-- **/stop**: Para a música e desconecta o bot do canal.
-- **Auto-Join**: O bot se conecta automaticamente ao canal de rádio configurado ao iniciar.
+- **/radio [url]**: Toca uma rádio online ou stream de áudio via link direto.
+- **/stop**: Para a reprodução atual e desconecta o bot da sala.
 
-### 📂 Social (Interação)
+### 💬 Social (Interação e Roleplay)
 
-Comandos de RPG e carinho.
+Comandos para expressar sentimentos e interagir.
 
-- **/b-hug**: Dê um abraço (com GIF).
-- **/b-kiss**: Dê um beijo.
-- **/b-slap**: Dê um tapa!
-- **/ship**: Calcule o amor entre duas pessoas.
+- **/bite**: Dê uma mordidinha em alguém (GIF).
+- **/cuddle**: Faça carinho em alguém (GIF).
+- **/dance**: Convide para dançar ou dance sozinho (GIF).
+- **/hug**: Dê um abraço apertado em alguém (GIF).
+- **/kiss**: Dê um beijo em alguém (GIF).
 - **/say**: Faz o bot repetir uma mensagem sua.
+- **/ship**: Calcule a compatibilidade amorosa entre duas pessoas.
+- **/slap**: Dê um tapa (virtual) em alguém.
 
-### 🛠️ Utility (Utilidades)
+### 🛠️ Utility (Utilidades Gerais)
 
-Ferramentas úteis para o dia a dia.
+Ferramentas úteis para o dia a dia do servidor.
 
-- **/privada**: Cria uma sala de voz temporária exclusiva para você (com auto-delete).
-- **/reuniao**: Cria uma sala de reunião temporária.
-- **/help**: Mostra esta lista de comandos.
-- **/avatar**: Mostra a foto de perfil de alguém.
-- **/serverinfo**: Informações do servidor.
-- **/userinfo**: Informações de um usuário.
-- **/ping**: Mostra a latência do bot.
+- **/avatar**: Exibe a foto de perfil em alta resolução de um usuário.
+- **/help**: Mostra esta lista de comandos organizada.
+- **/ping**: Verifica a latência e conexão do bot.
+- **/privada**: Cria uma sala de voz temporária exclusiva para você (auto-delete).
+- **/reuniao**: Cria uma sala de reunião temporária pública (auto-delete).
+- **/serverinfo**: Exibe estatísticas e informações do servidor.
+- **/userinfo**: Exibe informações detalhadas sobre um usuário ou bot.
 
 ---
 
@@ -79,7 +86,7 @@ Ferramentas úteis para o dia a dia.
    ```env
    DISCORD_TOKEN=seu_token_aqui
    CLIENT_ID=seu_client_id_aqui
-   GUILD_ID=id_do_servidor_de_teste
+   # GUILD_ID= (Deixe comentado para registro global)
    ```
 4. **Inicie o Bot**:
    ```bash
