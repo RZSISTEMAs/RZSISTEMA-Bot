@@ -3,107 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RZSISTEMA App - O Bot Definitivo</title>
+    <meta name="description" content="RZSISTEMA Bot - O melhor bot brasileiro para Discord com sistemas de música, moderação, tickets, jogos e interação social. Adicione agora!">
+    <meta name="keywords" content="discord bot, rzsistema, música, moderação, tickets, jogos, discord brasil, bot português">
+    <meta name="author" content="RZSISTEMA">
+    <meta name="theme-color" content="#5865F2">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rzsistema-bot-vz18.vercel.app/">
+    <meta property="og:title" content="RZSISTEMA Bot - Revolucione seu Servidor Discord">
+    <meta property="og:description" content="Música Hi-Fi, Jogos, Moderação Automática e Tickets. Tudo o que sua comunidade precisa em um só lugar.">
+    <meta property="og:image" content="logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rzsistema-bot-vz18.vercel.app/">
+    <meta property="twitter:title" content="RZSISTEMA Bot - Revolucione seu Servidor Discord">
+    <meta property="twitter:description" content="Música Hi-Fi, Jogos, Moderação Automática e Tickets. Tudo o que sua comunidade precisa em um só lugar.">
+    <meta property="twitter:image" content="logo.png">
+
+    <title>RZSISTEMA Bot | Inovação para seu Discord</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/embed/avatars/0.png">
+    <link rel="icon" type="image/png" href="logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <div class="background-glow"></div>
+
     <header>
-        <div class="logo">RZSISTEMA <span>App</span></div>
+        <div class="logo">
+            <img src="logo.png" alt="RZSISTEMA Logo">
+            <span>RZSISTEMA</span>
+        </div>
         <nav>
-            <a href="#features">Funcionalidades</a>
-            <a href="#commands">Comandos</a>
-            <a href="#support">Suporte</a>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#stats">Estatísticas</a></li>
+                <li><a href="#commands">Comandos</a></li>
+                <li><a href="#support">Suporte</a></li>
+            </ul>
         </nav>
-        <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_AQUI&permissions=8&scope=bot%20applications.commands" class="btn-add">Adicionar ao Discord</a>
+        <a href="https://discord.com/oauth2/authorize?client_id=1141151534399377450&permissions=8&scope=bot%20applications.commands" class="cta-button">Adicionar Bot</a>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Potencialize seu <br><span>Servidor Discord</span></h1>
-            <p>Gerencie, divirta e engaje sua comunidade com o sistema de bot mais avançado. Música Hi-Fi, moderação automática e jogos interativos.</p>
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <span class="badge">V2.0 JÁ DISPONÍVEL</span>
+            <h1>A Inteligência que <br><span class="gradient-text">Seu Servidor Merece</span></h1>
+            <p>Transforme sua comunidade com o <strong>RZSISTEMA</strong>. Música de alta qualidade, moderação avançada, sistema de tickets e jogos interativos. Tudo 100% em Português.</p>
             <div class="hero-buttons">
-                <a href="https://discord.com/oauth2/authorize?client_id=SEU_CLIENT_ID_AQUI&permissions=8&scope=bot%20applications.commands" class="btn-primary">
-                     Adicionar ao Servidor 🚀
+                <a href="https://discord.com/oauth2/authorize?client_id=1141151534399377450&permissions=8&scope=bot%20applications.commands" class="btn-primary">
+                    <i class="fab fa-discord"></i> Adicionar Agora
                 </a>
-                <a href="#features" class="btn-secondary">Explorar Recursos</a>
+                <a href="#commands" class="btn-secondary">Ver Comandos</a>
             </div>
         </div>
-        <div class="hero-image">
-            <img src="../bot_preview_mockup.png" alt="Dashboard do Bot">
+        <div class="hero-image" data-aos="fade-left">
+            <img src="logo.png" alt="RZSISTEMA Bot Interface" class="floating">
         </div>
     </section>
 
-    <div class="stats">
-        <div class="stat-item">
-            <div class="stat-number">+10k</div>
-            <div class="stat-label">Usuários</div>
+    <section id="stats" class="stats-container" data-aos="fade-up">
+        <div class="stat-box">
+            <i class="fas fa-server"></i>
+            <h3>+100</h3>
+            <p>Servidores</p>
         </div>
-        <div class="stat-item">
-            <div class="stat-number">99.9%</div>
-            <div class="stat-label">Uptime</div>
+        <div class="stat-box">
+            <i class="fas fa-users"></i>
+            <h3>+50k</h3>
+            <p>Usuários</p>
         </div>
-        <div class="stat-item">
-            <div class="stat-number">+50</div>
-            <div class="stat-label">Comandos</div>
+        <div class="stat-box">
+            <i class="fas fa-clock"></i>
+            <h3>99.9%</h3>
+            <p>Uptime</p>
         </div>
-    </div>
+    </section>
 
     <section id="features" class="features">
-        <h2>Por que escolher o RZSISTEMA App?</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>🎧 Música & Rádio</h3>
-                <p>Toque rádios online 24h ou suas músicas favoritas com alta qualidade e estabilidade.</p>
+        <div class="section-header" data-aos="fade-up">
+            <h2>Por que escolher o RZSISTEMA?</h2>
+            <p>Funcionalidades desenvolvidas para engajar e proteger.</p>
+        </div>
+        <div class="feature-grid">
+            <div class="feature-card" data-aos="flip-left">
+                <div class="icon">🎵</div>
+                <h3>Música Hi-Fi</h3>
+                <p>Reprodução de rádio e streams com qualidade de estúdio e sem travamentos.</p>
             </div>
-            <div class="card">
-                <h3>🎫 Sistema de Ticket</h3>
-                <p>Atendimento profissional. Crie canais privados automaticamente para suporte.</p>
+            <div class="feature-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="icon">�️</div>
+                <h3>Tickets Avançados</h3>
+                <p>Suporte profissional com transcripts automáticos (.txt) enviados na DM.</p>
             </div>
-            <div class="card">
-                <h3>🎮 Minigames</h3>
-                <p>Jogo da Velha, Jokenpo, Adivinhação e mais para animar o chat.</p>
+            <div class="feature-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="icon">🎮</div>
+                <h3>Diversão Garantida</h3>
+                <p>Forca, Memória, Jogo da Velha, Akinator e muito mais para seus membros.</p>
             </div>
-            <div class="card">
-                <h3>🛠️ Utilidades</h3>
-                <p>Salas de voz temporárias, reuniões organizadas e ferramentas de moderação.</p>
+            <div class="feature-card" data-aos="flip-left" data-aos-delay="300">
+                <div class="icon">�️</div>
+                <h3>Moderação 24/7</h3>
+                <p>Logs automáticos de mensagens deletadas e boas-vindas personalizadas.</p>
             </div>
         </div>
     </section>
 
-    <section id="commands" class="commands">
-        <h2>Lista de Comandos</h2>
-        <div class="command-category">
-            <h3>Administração & Utilidade</h3>
-            <code>/ticketsetup</code> <code>/privada</code> <code>/reuniao</code> <code>/serverinfo</code>
+    <section id="commands" class="commands-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Lista de Comandos</h2>
+            <p>Explore tudo o que o RZSISTEMA pode fazer.</p>
         </div>
-        <div class="command-category">
-            <h3>Diversão & Social</h3>
-            <code>/ship</code> <code>/b-hug</code> <code>/velha</code> <code>/jokenpo</code> <code>/say</code>
-        </div>
-        <div class="command-category">
-            <h3>Música</h3>
-            <code>/radio</code> <code>/stop</code> <code>/play</code>
+
+        <div class="commands-container">
+            <!-- Categoria Admin -->
+            <div class="command-category" data-aos="fade-up">
+                <h3>🛠️ Administração & Tickets</h3>
+                <ul class="command-list">
+                    <li><code>/ticketsetup</code> - Cria o painel de atendimento com botão.</li>
+                    <li><code>/ticket</code> - Gerencia configurações internas de tickets.</li>
+                    <li><code>logs</code> - (Automático) Registra mensagens apagadas.</li>
+                    <li><code>Boas-vindas</code> - (Automático) Envia cartão de chegada.</li>
+                </ul>
+            </div>
+
+            <!-- Categoria Social -->
+            <div class="command-category" data-aos="fade-up">
+                <h3>💬 Social & Interação</h3>
+                <ul class="command-list">
+                    <li><code>/bite @user</code> - Dá uma mordidinha (GIF).</li>
+                    <li><code>/cuddle @user</code> - Faz carinho/cafuné.</li>
+                    <li><code>/dance</code> - Dança sozinho ou com alguém.</li>
+                    <li><code>/hug @user</code> - Dá um abraço virtual.</li>
+                    <li><code>/kiss @user</code> - Manda um beijo.</li>
+                    <li><code>/ship @user @user</code> - Calcula a chance de amor.</li>
+                    <li><code>/slap @user</code> - Dá um tapa de brincadeira.</li>
+                    <li><code>/say [msg]</code> - O bot repete sua frase.</li>
+                </ul>
+            </div>
+
+            <!-- Categoria Diversão -->
+            <div class="command-category" data-aos="fade-up">
+                <h3>🎲 Jogos & Diversão</h3>
+                <ul class="command-list">
+                    <li><code>/forca</code> - Jogo da Forca (responda no chat).</li>
+                    <li><code>/memoria</code> - Jogo da Memória (emojis).</li>
+                    <li><code>/velha</code> - Jogo da Velha (Tic-Tac-Toe).</li>
+                    <li><code>/bola8 [pergunta]</code> - A bola mágica responde.</li>
+                    <li><code>/jokenpo</code> - Pedra, Papel e Tesoura.</li>
+                    <li><code>/moeda</code> - Cara ou Coroa.</li>
+                    <li><code>/adivinhar</code> - Adivinhe o número (1-100).</li>
+                    <li><code>/dado</code> - Rola dados (d6, d20...).</li>
+                </ul>
+            </div>
+
+            <!-- Categoria Música -->
+            <div class="command-category" data-aos="fade-up">
+                <h3>🎵 Música & Rádio</h3>
+                <ul class="command-list">
+                    <li><code>/radio [url]</code> - Toca rádio/stream ao vivo.</li>
+                    <li><code>/stop</code> - Para a música e sai do canal.</li>
+                    <li><code>Auto-Play</code> - (Sistema) Toca rádio auto ao ligar.</li>
+                </ul>
+            </div>
+
+            <!-- Categoria Moderation -->
+            <div class="command-category" data-aos="fade-up">
+                <h3>🛡️ Moderação</h3>
+                <ul class="command-list">
+                    <li><code>/ban @user</code> - Bane um usuário.</li>
+                    <li><code>/kick @user</code> - Expulsa um usuário.</li>
+                    <li><code>/timeout @user</code> - Silencia temporariamente.</li>
+                    <li><code>/clear [qtd]</code> - Limpa mensagens do chat.</li>
+                    <li><code>/lock</code> - Tranca o canal atual.</li>
+                    <li><code>/unlock</code> - Destranca o canal.</li>
+                </ul>
+            </div>
+            
+            <!-- Categoria Utils -->
+            <div class="command-category" data-aos="fade-up">
+                <h3>⚙️ Útil</h3>
+                <ul class="command-list">
+                    <li><code>/privada</code> - Cria sala de voz privada temp.</li>
+                    <li><code>/reuniao</code> - Cria sala de reunião pública temp.</li>
+                    <li><code>/avatar @user</code> - Vê foto grande do usuário.</li>
+                    <li><code>/userinfo</code> - Info detalhada da conta.</li>
+                    <li><code>/serverinfo</code> - Info do servidor.</li>
+                    <li><code>/ping</code> - Latência do bot.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 RZSISTEMA. Todos os direitos reservados.</p>
-        <p>Desenvolvido com ❤️ para Discord.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>RZSISTEMA</h2>
+                <p>Inovação e qualidade para sua comunidade Discord.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Termos</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 RZSISTEMA. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Simples animação de scroll suave
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+        AOS.init({
+            duration: 1000,
+            once: true
         });
     </script>
 </body>
